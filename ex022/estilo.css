@@ -6,6 +6,7 @@
 /* Exercício fundo 001 */
 body h1, h2 {
     text-align: center;
+    padding: 10px;
 }
 div.quadradomae {
     margin: 0 0 0 150px;
@@ -44,9 +45,10 @@ div.bloco {
     background-image: url('imagens/wallpaper003.jpg');
     background-repeat: no-repeat;
     height: 200px;
+    width: 1200px;
     border: 1px solid black;
     border-radius: 20px;
-    margin: 10px;
+    margin: 0 auto 5px auto;
 }
 div#q13 {
     background-position: left top;
@@ -60,12 +62,22 @@ div#q33 {
 div#q43 {
     background-position: center center;
 }
-/* Posicionamento exercíco 004 */
+/* Posicionamento exercício 004 */
 div.pos {
     background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
     background-size: 100px;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 550px;
+    height: 500px;
     width: 1000px;
+    margin: auto;
+    border: 1px solid black;
+}
+/* Posiionamento exercício 005 */
+div.ex005 {
+    background-image: url('imagens/wallpaper003.jpg');
+    background-position: right bottom;
+    height: 98vh;
+    width: 1000px;
+    margin: auto;
 }
