@@ -7,6 +7,9 @@
 body h1, h2 {
     text-align: center;
     padding: 10px;
+    color: white;
+    margin: 5PX;
+    background-color: brown;
 }
 div.quadradomae {
     margin: 0 0 0 150px;
@@ -105,4 +108,25 @@ div.tifundo p {
 }
 div.tifundo h1, h2 {
     color: white;
+}
+/* alinhamento vertical exercício 007 */
+.avertical #container {
+    background-image: url('imagens/target001.png');
+    background-color: blueviolet;
+    background-size: 100% 100%;
+    position: relative;
+    height: 500px;
+    padding: 10px;
+}
+.avertical #conteudo {
+    background-image: url('imagens/target001.png');
+    background-color: yellow;
+    background-size: 100% 100%;
+    position: absolute;
+    height: 200px;
+    width: 400px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
 }
