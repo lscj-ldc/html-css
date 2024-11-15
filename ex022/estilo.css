@@ -81,3 +81,22 @@ div.ex005 {
     width: 1000px;
     margin: auto;
 }
+/* Teste de imagem de fundo exercício 006 */
+div.tifundo {
+    height: 100vh;
+    background-color: black;
+    background-image: url('imagens/wallpaper002.jpg');
+    margin: 10px auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.tifundo p {
+    background-color: white;
+    width: 400px;
+    padding: 10px;
+    margin: auto;
+}
+div.tifundo h1, h2 {
+    color: white;
+}
