@@ -4,6 +4,15 @@
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+body h1, h2{
+    padding: 10px;
+}
+body h6 {
+    background: blue;
+    color: blue;
+    padding: 10px;
 }
 table {
     width: 400px;
@@ -15,4 +24,19 @@ td {
     padding: 8px;
     text-align: center; /* Alinhamento horizontal */
     vertical-align: top; /* Alinhamento Verticalmente com top bottom e middle que centraliza */
+}
+.tabela {
+    width: 1200px;
+    margin: auto;
+}
+.corpo-linha td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.cabecalho, .rodape {
+    background-color: gray;
+    color: white;
+}
+.corpo-linha .corpo-coluna {
+    text-align: left;
 }
