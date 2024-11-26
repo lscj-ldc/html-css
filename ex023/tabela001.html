@@ -43,6 +43,7 @@
         <h2>Uso de Tabelas Grandes</h2>
         <!-- Anatomia para tabelas grandes
      table
+        caption
         thead
             tr, td, th
         tbody
@@ -50,30 +51,31 @@
         tfoot
             tr, td, th-->
         <table class="tabela">
+            <caption class="pduf">População das Unidades Federativas</caption>
             <thead class="cabecalho">
                 <tr class="cabecalho-linha">
-                    <th>Posição</th>
-                    <th>Unidade Federativa</th>
-                    <th>População (Estimativa 2024)</th>
-                    <th>População (Censo de 2022)</th>
-                    <th>Mudança</th>
-                    <th>% da pop. total</th>
-                    <th>Pais ccomparável (habitantes)</th>
+                    <th scope="col">Posição</th>
+                    <th scope="col">Unidade Federativa</th>
+                    <th scope="col">População (Estimativa 2024)</th>
+                    <th scope="col">População (Censo de 2022)</th>
+                    <th scope="col">Mudança</th>
+                    <th scope="col">% da pop. total</th>
+                    <th scope="col">Pais ccomparável (habitantes)</th>
                 </tr>
             </thead>
             <tbody class="corpo">
                 <tr class="corpo-linha">
                     <td>1</td>
-                    <td class="corpo-coluna"><img src="imagem/Bandeira_do_estado_de_São_Paulo.svg.png" alt=""> São Paulo</td>
+                    <td class="corpo-coluna"><img src="imagem/Bandeira_do_estado_de_São_Paulo.svg.png" alt="Bandeira de São Paulo"> São Paulo</td>
                     <td>45 973 190</td>
                     <td>44 411 238</td>
                     <td>+3,51%</td>
                     <td>21,88%</td>
-                    <td class="corpo-coluna">Argentina (46 621 847)</td>
+                    <td class="corpo-coluna"><img src="imagem/Flag_of_Argentina.svg" alt=""> Argentina (46 621 847)</td>
                 </tr>
                 <tr class="corpo-linha">
                     <td>2</td>
-                    <td class="corpo-coluna">Minas Gerais</td>
+                    <td class="corpo-coluna"><img src="imagem/Bandeira_de_Minas_Gerais.svg.jpg" alt="Bandeira de Minas Gerais"> Minas Gerais</td>
                     <td>21 322 692</td>
                     <td>20 538 718</td>
                     <td>+3,86%</td>
@@ -308,7 +310,7 @@
             </tbody>
             <tfoot class="rodape">
                 <tr class="corpo-linha">
-                    <td></td>
+                    <th scope="row">Total Geral</th>
                     <td></td>
                     <td>212 583 750</td>
                     <td>203 078 389</td>
