@@ -28,12 +28,21 @@ td {
 .tabela {
     width: 1200px;
     margin: auto;
+    position: relative;
+}
+.cabecalho > tr > th {
+    position: sticky;
+    top: 0;
+    background-color: #383838;
 }
 .pduf {
     background: cadetblue;
     font: bold;
     color: white;
     padding: 10px;
+}
+.corpo-linha:nth-child(2n) {
+    background-color: lightgray;
 }
 .corpo-linha td, th {
     border: 1px solid black;
