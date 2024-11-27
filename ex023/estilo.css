@@ -13,6 +13,7 @@ body h6 {
     background: blue;
     color: blue;
     padding: 10px;
+    margin: 10px;
 }
 .tabelaum {
     width: 400px;
@@ -74,4 +75,81 @@ body h6 {
 }
 .mcelulas .ccelulas .lcelulas{
     text-align: center;
+}
+/* Desafio 1 */
+.desafio {
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    border-collapse: collapse;
+}
+.desafio-coluna-m {
+    background: #aaa7a7;
+    border: 1px solid black;
+}
+.desafio-coluna {
+    border: 1px solid black;
+}
+/* Desafio 2 */
+.desafio-dois {
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    border-collapse: collapse;
+}
+.coluna-d-dois-m {
+    background: #aaa7a7;
+    border: 1px solid black;
+}
+.coluna-d-dois {
+    border: 1px solid black;
+}
+/* Exercício 4 */
+.exercicio-quatro {
+    margin: auto;
+    width: 600px;
+    height: 300px;
+    border-collapse: collapse;
+}
+.exercicio-quatro-titulo {
+    padding: 10px;
+    background: #383838;
+    color: white;
+}
+.coluna-exe-quatro-m {
+    background: #aaa7a7;
+    border: 1px solid black;
+    padding: 10px;
+}
+.coluna-exe-quatro {
+    border: 1px solid black;
+    text-align: left;
+    padding: 5px;
+}
+/* Desafio Três */
+.desafio-tres {
+    margin: auto;
+    width: 500px;
+    border-collapse: collapse;
+}
+.desafio-tres-titulo {
+    padding: 10px;
+    background: #383838;
+    color: white;
+}
+.desafio-tres-linha-m {
+    border: 1px solid black;
+    background: #aaa7a7;
+    color: white;
+    text-align: center;
+}
+.desafio-tres-linha {
+    border: 1px solid;
+    text-align: left;
+    padding: 5px;
+}
+.desafio-tres-linha-n {
+    border: 1px solid;
+    text-align: center;
+    padding: 5px;
 }
