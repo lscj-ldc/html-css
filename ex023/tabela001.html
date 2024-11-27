@@ -16,26 +16,26 @@
                 Table row = linha de tabela
                     Table header = cabeçalho de tabela
                     Table data = dado de tabela-->
-        <table>
-            <tr><!-- Primeira Linha -->
-                <td>A1</td>
-                <td>B1</td>
-                <td>C1</td>
+        <table class="tabelaum">
+            <tr class="linhaum"><!-- Primeira Linha -->
+                <td class="colum">A1</td>
+                <td class="colum">B1</td>
+                <td class="colum">C1</td>
             </tr>
-            <tr><!-- Segunda Linha -->
-                <td>A2</td>
-                <td>B2</td>
-                <td>C2</td>
+            <tr class="linhaum"><!-- Segunda Linha -->
+                <td class="colum">A2</td>
+                <td class="colum">B2</td>
+                <td class="colum">C2</td>
+            </tr class="linhaum">
+            <tr class="linhaum"><!-- Terceira Linha -->
+                <td class="colum">A3</td>
+                <td class="colum">B3</td>
+                <td class="colum">C3</td>
             </tr>
-            <tr><!-- Terceira Linha -->
-                <td>A3</td>
-                <td>B3</td>
-                <td>C3</td>
-            </tr>
-            <tr><!-- Quarta Linha -->
-                <td>A4</td>
-                <td>B4</td>
-                <td>C4</td>
+            <tr class="linhaum"><!-- Quarta Linha -->
+                <td class="colum">A4</td>
+                <td class="colum">B4</td>
+                <td class="colum">C4</td>
             </tr>
         </table>
         <h6>0</h6>
@@ -54,13 +54,13 @@
             <caption class="pduf">População das Unidades Federativas</caption>
             <thead class="cabecalho">
                 <tr class="cabecalho-linha">
-                    <th scope="col">Posição</th>
-                    <th scope="col">Unidade Federativa</th>
-                    <th scope="col">População (Estimativa 2024)</th>
-                    <th scope="col">População (Censo de 2022)</th>
-                    <th scope="col">Mudança</th>
-                    <th scope="col">% da pop. total</th>
-                    <th scope="col">Pais ccomparável (habitantes)</th>
+                    <th scope="col" class="umcol">Posição</th>
+                    <th scope="col" class="umcol">Unidade Federativa</th>
+                    <th scope="col" class="umcol">População (Estimativa 2024)</th>
+                    <th scope="col" class="umcol">População (Censo de 2022)</th>
+                    <th scope="col" class="umcol">Mudança</th>
+                    <th scope="col" class="umcol">% da pop. total</th>
+                    <th scope="col" class="umcol">Pais ccomparável (habitantes)</th>
                 </tr>
             </thead>
             <tbody class="corpo">
@@ -310,7 +310,7 @@
             </tbody>
             <tfoot class="rodape">
                 <tr class="corpo-linha">
-                    <th scope="row">Total Geral</th>
+                    <th scope="row" colspan="2" class="foot">Total Geral</th>
                     <td></td>
                     <td>212 583 750</td>
                     <td>203 078 389</td>
@@ -319,6 +319,31 @@
                     <td></td>
                 </tr>
             </tfoot>
+        </table>
+        <h6>0</h6>
+        <h1>Exercício 003</h1>
+        <h2>Mesclagem de Células</h2>
+        <table class="mcelulas">
+            <tr class="ccelulas">
+                <td class="lcelulas">A</td>
+                <td class="lcelulas" colspan="2">B</td><!-- colspan="2" mescla linha ou coluna -->
+                <!--td class="lcelulas">C</td-->
+            </tr>
+            <tr class="ccelulas">
+                <td class="lcelulas" rowspan="3">D</td>
+                <td class="lcelulas">E</td>
+                <td class="lcelulas">F</td>
+            </tr>
+            <tr class="ccelulas">
+                <!--td class="lcelulas">G</td-->
+                <td class="lcelulas">H</td>
+                <td class="lcelulas">I</td>
+            </tr>
+            <tr class="ccelulas">
+                <!--td class="lcelulas">J</td-->
+                <td class="lcelulas">L</td>
+                <td class="lcelulas">M</td>
+            </tr>
         </table>
 </body>
 
