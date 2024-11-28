@@ -153,3 +153,43 @@ body h6 {
     text-align: center;
     padding: 5px;
 }
+/* Exercício 05 */
+.tabela-cinco {
+    margin: auto;
+    border-collapse: collapse;
+}
+.cabecalho-linha-dados {
+    border: 1px solid black;
+    padding: 10px;
+}
+.corpo-linha-inclusao {
+    border: 1px solid black;
+    padding: 10px;
+}
+.cnome {
+    background-color: wheat;
+}
+/* Exercícios tabela responsiva */
+p {
+    margin: auto;
+    width: 930px;
+    text-align: justify;
+    padding: 10px;
+}
+.responsiva {
+    margin: auto;
+    padding: 10px;
+    background-color: #aaa7a7;
+    color: white;
+}
+.container {
+    overflow: auto;
+}
+.tabela-responsiva {
+    border-collapse: collapse;
+    margin: auto;
+}
+.coluna-responsiva {
+    border: 1px solid black;
+    padding: 5px;
+}
