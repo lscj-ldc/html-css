@@ -7,16 +7,20 @@
     <title>Formulário</title>
 </head>
 <body>
+    <h1>Primeira Aula de Formulário</h1>
     <section id="primeira-aula-form">
-        <p>
-            Nome: <input type="text" name="nome" id="nome">
-        </p>
-        <p>
-            Sobrenome: <input type="text" name="sobrenome" id="sobrenome">
-        </p>
-        <p>
-            <input type="submit" value="Enviar" id="enviar">
-        </p>
+        <form action="cadastro.php"><!-- Para desativar o preenchimento automático basta usar autocomplete="off"-->
+            <p>
+                <label for="inome">Nome: </label> <input type="text" name="nome" id="inome">
+            </p>
+            <p>
+                <label for="isobrenome">Sobrenome: </label> <input type="text" name="sobrenome" id="isobrenome">
+            </p>
+            <p>
+                <input type="submit" value="Enviar" id="enviar">
+            </p>
+        </form>
     </section>
+    <h6>0</h6>
 </body>
 </html>

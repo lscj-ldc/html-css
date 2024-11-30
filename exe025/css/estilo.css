@@ -4,21 +4,36 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+h1 {
+    text-align: center;
+    padding: 10px;
+}
+h6 {
+    background-color: blue;
+    color: blue;
+    height: 25px;
+    margin: 10px;
+}
 section#primeira-aula-form {
     background-color: blue;
     border-radius: 5px;
     margin: 10px auto;
-    width: 300px;
+    width: 270px;
     height: 120px;
-}
-section#enviar {
-    padding: 10px;
+    margin: auto;
 }
 section#primeira-aula-form p {
-    margin: 10px;
+    margin: auto;
+    float: right;
     padding: 5px;
+    color: white;
 }
-section#primeira-aula-form > p#enviar {
-    padding: 10px;
-    background-color: black;
+p input#nome, input#sobrenome {
+    float: right;
+}
+p input#enviar {
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    border-radius: 5px;
 }
