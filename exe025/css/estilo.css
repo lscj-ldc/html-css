@@ -1,0 +1,24 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section#primeira-aula-form {
+    background-color: blue;
+    border-radius: 5px;
+    margin: 10px auto;
+    width: 300px;
+    height: 120px;
+}
+section#enviar {
+    padding: 10px;
+}
+section#primeira-aula-form p {
+    margin: 10px;
+    padding: 5px;
+}
+section#primeira-aula-form > p#enviar {
+    padding: 10px;
+    background-color: black;
+}
