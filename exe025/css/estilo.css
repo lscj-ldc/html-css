@@ -18,7 +18,7 @@ section#primeira-aula-form {
     background-color: blue;
     border-radius: 5px;
     margin: 10px auto;
-    width: 270px;
+    width: 300px;
     height: 120px;
     margin: auto;
 }
@@ -37,11 +37,12 @@ p input#enviar {
     text-align: center;
     border-radius: 5px;
 }
+/* segundo furmulário */
 section#segundo-formulario {
     background-color: blue;
     border-radius: 5px;
     margin: 10px auto;
-    width: 270px;
+    width: 300px;
     height: 120px;
     margin: auto;
 }
@@ -52,6 +53,26 @@ section#segundo-formulario p {
     color: white;
 }
 p input#limpar {
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+/* terceito formulário */
+section#terceiro-formulario {
+    background-color: blue;
+    border-radius: 5px;
+    margin: 10px auto;
+    width: 300px;
+    height: 250px;
+}
+section#terceiro-formulario p {
+    margin: auto;
+    float: right;
+    padding: 5px;
+    color: white;
+}
+p input {
     padding: 5px;
     border-radius: 5px;
     text-align: center;
