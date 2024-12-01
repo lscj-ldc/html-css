@@ -7,9 +7,9 @@
     <title>Formulário</title>
 </head>
 <body>
-    <h1>Primeira Aula de Formulário</h1>
+    <h1>Primeiro Formulário Aula um ao Três</h1>
     <section id="primeira-aula-form">
-        <form action="cadastro.php"><!-- Para desativar o preenchimento automático basta usar autocomplete="off"-->
+        <form action="cadastro.php" method="get"><!-- Para desativar o preenchimento automático basta usar autocomplete="off"-->
             <p>
                 <label for="inome">Nome: </label> <input type="text" name="nome" id="inome">
             </p>
@@ -18,6 +18,24 @@
             </p>
             <p>
                 <input type="submit" value="Enviar" id="enviar">
+            </p>
+        </form>
+    </section>
+    <h6>0</h6>
+    <h1>Segundo Formulário Aula Quatro </h1>
+    <section id="segundo-formulario">
+        <form action="cadastro.php" method="post" autocomplete="on"><!-- deixar o autocomplete="on" para poder usar o autocomplete nos campos seguintes do formulário -->
+            <p>
+                <label for="iusu">Usuário: </label>
+                <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" placeholder="Nome do Usuário" autocomplete="username"><!-- required obriga o usuário a informar os dados-->
+            </p>
+            <p>
+                <label for="isen">Senha: </label>
+                <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" placeholder="Digite Sua Senha" autocomplete="new-password"><!-- nova senha usar autocomplete="new--password", senha já cadastrada será autocomplete="current-password" -->
+            </p>
+            <p>
+                <input type="submit" name="enviar" id="enviar">
+                <input type="reset" value="Limpar" id="limpar">
             </p>
         </form>
     </section>

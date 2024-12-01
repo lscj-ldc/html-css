@@ -37,3 +37,23 @@ p input#enviar {
     text-align: center;
     border-radius: 5px;
 }
+section#segundo-formulario {
+    background-color: blue;
+    border-radius: 5px;
+    margin: 10px auto;
+    width: 270px;
+    height: 120px;
+    margin: auto;
+}
+section#segundo-formulario p {
+    margin: auto;
+    float: right;
+    padding: 5px;
+    color: white;
+}
+p input#limpar {
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
