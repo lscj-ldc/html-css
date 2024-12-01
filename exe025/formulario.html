@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <h1>Primeiro Formulário Aula um ao Três</h1>
+    <section id="formulario">
+        <form action="cadastro.php" method="get">
+            <!-- Para desativar o preenchimento automático basta usar autocomplete="off"-->
+            <fieldset>
+                <legend>
+                    Dados Pessoais
+                </legend>
+                <p>
+                    <label for="inome">
+                        Nome:
+                    </label>
+                    <input type="text" name="nome" id="inome" placeholder="Nome">
+                </p>
+                <p>
+                    <label for="isobrenome">
+                        Sobrenome:
+                    </label>
+                    <input type="text" name="sobrenome" id="isobrenome" placeholder="Sobrenome">
+                </p>
+                <p>
+                    <input type="submit" value="Enviar" id="enviar">
+                </p>
+            </fieldset>
+        </form>
+    </section>
+    <h6>0</h6>
+    <h1>Segundo Formulário Aula Quatro </h1>
+    <section id="formulario">
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <!-- deixar o autocomplete="on" para poder usar o autocomplete nos campos seguintes do formulário -->
+            <fieldset>
+                <legend>
+                    Dados Pessoais
+                </legend>
+                <p>
+                    <label for="iusu">Usuário: </label>
+                    <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15"
+                        placeholder="Nome do Usuário"
+                        autocomplete="username"><!-- required obriga o usuário a informar os dados-->
+                </p>
+                <p>
+                    <label for="isen">Senha: </label>
+                    <input type="password" name="sen" id="isen" required minlength="8" maxlength="20"
+                        placeholder="Digite Sua Senha"
+                        autocomplete="new-password"><!-- nova senha usar autocomplete="new--password", senha já cadastrada será autocomplete="current-password" -->
+                </p>
+                <p>
+                    <input type="submit" name="enviar" id="enviar">
+                    <input type="reset" value="Limpar" id="limpar">
+                </p>
+            </fieldset>
+        </form>
+    </section>
+    <h6>0</h6>
+    <h1>Terceiro Formulário Aula Cinco e Seis</h1>
+    <section id="formulario">
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <fieldset>
+                <legend>
+                    Dados Pessoais
+                </legend>
+                <p>
+                    <label for="inome">
+                        Nome:
+                    </label>
+                    <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome Completo"
+                        autocomplete="name">
+                </p>
+                <p>
+                    <label for="imedia">Média: </label>
+                    <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1"
+                        required><!-- step controla de quanto os valores serão almentados -->
+                </p>
+                <p>
+                    <label for="imes">
+                        Período Letivo:
+                    </label>
+                    <input type="month" name="mes" id="imes">
+                </p>
+                <p>
+                    <label for="idia">Dia da Prova</label>
+                    <input type="date" name="dia" id="idia">
+                </p>
+                <p>
+                    <label for="ihora">
+                        Horário da Prova:
+                    </label>
+                    <input type="time" name="hora" id="ihora">
+                </p>
+                <p>
+                    <input type="submit" value="Enviar" id="enviar">
+                    <input type="reset" value="Limpar" id="limpar">
+                </p>
+            </fieldset>
+        </form>
+    </section>
+    <h6>0</h6>
+    <h1>Quarto Formulário Aula Sete</h1>
+    <section id="formulario">
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <fieldset>
+                <legend>
+                    <p>Dados Pessoais</p>
+                </legend>
+                <p>
+                    <label for="inome">
+                        Nome:
+                    </label>
+                    <input type="text" name="nome" id="inome" minlength="5" maxlength="20" required>
+                </p>
+                <p>
+                    <label for="iemail">
+                        E-mail:
+                    </label>
+                    <input type="email" name="email" id="iemail" autocomplete="email" placeholder="Informe seu E-mail">
+                </p>
+                <p>
+                    <label for="itel">
+                        Telefone:
+                    </label>
+                    <input type="tel" name="tel" id="itel" autocomplete="tel-national" placeholder="(000) 0 0000-0000"
+                        pattern="^\(\d{3}\)\d{4,5}-\d{4,5}$" required>
+                </p>
+                <!-- Estudar mais sobre RegEx -->
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar" name="limpar" id="ilimpar">
+                </p>
+            </fieldset>
+        </form>
+    </section>
+    <h6>0</h6>
+    <h1>Quinto Formulário Aula Oito</h1>
+    <section id="formulario">
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <fieldset>
+                <legend>
+                    Sexo
+                </legend>
+                <label class="bloco" for="isxmas"><input type="radio" name="sxmas" id="isxmas" value="M" checked>
+                    Masculino</label><!-- para o botão radio não ficar marcado, todos devem ter o mesmo nome, para deixar um dos botões marcado como referencia, basta informar checked -->
+                <label class="bloco" for="isxfem"><input type="radio" name="sxmas" id="isxfem" value="F">
+                    Feminino</label>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Dados
+                </legend>
+                <label class="bloco" for="iesbas"><input type="checkbox" name="esbas" id="iesbas"> Basquete</label>
+                <label class="bloco" for="iesfut"><input type="checkbox" name="esfut" id="iesfut"> Futebol</label>
+                <label class="bloco" for="iesnat"><input type="checkbox" name="esnat" id="iesnat"> Natação</label>
+                <label class="bloco" for="iesten"><input type="checkbox" name="esten" id="iesten"> Tênis</label>
+                <p>
+                    <input type="submit" value="Enviar" name="enviar" id="enviar">
+                    <input type="reset" value="Limpar" name="limpar" id="ilimpar">
+                </p>
+            </fieldset>
+        </form>
+    </section>
+    <h6>0</h6>
+    <h1>Sexto Formulário Aula Nove</h1>
+    <section id="formulario">
+        <form action="cadastro.php" method="post" autocomplete="on"><!-- Acima de 3.000 bits usar o method="post" -->
+            <fieldset>
+                <legend>
+                    Dados Pessoais
+                </legend>
+                <p>
+                    <label for="icor">Cor: </label>
+                    <input type="color" name="cor" id="icor" value="#ffffff">
+                </p>
+                <p>
+                    <label for="inivel">
+                        Nível de Satisfação:
+                    </label>
+                    <input type="range" name="nivel" id="inivel" min="1" max="5" value="2">
+                </p>
+                <p>
+                    <label for="ifoto">
+                        Foto do Perfil:
+                    </label>
+                    <input type="file" name="foto" id="ifoto">
+                </p>
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+            </fieldset>
+        </form>
+    </section>
+    <h6>0</h6>
+    <h1>Sétimo Formulário Aula Dez</h1>
+    <section id="formulario">
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <fieldset>
+                <legend>
+                    Dados Pessoais
+                </legend>
+                <label for="iest">
+                    Estado:
+                </label>
+                <select name="estado" id="iest">
+                    <option value="" selected>---- Escolha um Estado ----</option>
+                    <optgroup label="Região Sudeste">
+                        <option value="MG">Minas Gerais</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP" selected>São Paulo</option>
+                    </optgroup>
+                    <optgroup label="Região Nordeste">
+                        <option value="MA">Maranhão</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                    </optgroup>
+                </select>
+                <p>
+                    <label for="iprof">Profissão: </label>
+                    <input type="text" name="prof" id="iprof"
+                        list="lsprof"><!-- o list deve ser o mesmo do id do datalist-->
+                    <datalist id="lsprof">
+                        <option value="ADM">Administrador</option>
+                        <option value="CONT">Contabilista</option>
+                        <option value="DEV">Desenvolvedor</option>
+                        <option value="PROF">Professor</option>
+                    </datalist>
+                </p>
+                <p>
+                    <label for="imsg">Mensagem: </label>
+                    <textarea name="msg" id="imsg" cols="30" rows="5" placeholder="Digite sua mensagem"></textarea>
+                </p>
+                <label for="enviar">
+                    <input type="submit" value="Enviar" id="enviar">
+                </label>
+                <label for="limpar">
+                    <input type="reset" value="Limpar" name="limpar" id="limpar">
+                </label>
+            </fieldset>
+        </form>
+    </section>
+    <h6>0</h6>
+</body>
+
+</html>

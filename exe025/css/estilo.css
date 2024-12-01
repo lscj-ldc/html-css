@@ -4,77 +4,51 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+body {
+    background: #7493F7;
+}
 h1 {
+    color: white;
     text-align: center;
     padding: 10px;
 }
 h6 {
-    background-color: blue;
-    color: blue;
+    background-color: #74BDF7;
+    color: #74BDF7;
     height: 25px;
     margin: 10px;
 }
-section#primeira-aula-form {
-    background-color: blue;
-    border-radius: 5px;
-    margin: 10px auto;
-    width: 300px;
-    height: 120px;
-    margin: auto;
-}
-section#primeira-aula-form p {
-    margin: auto;
-    float: right;
-    padding: 5px;
-    color: white;
-}
-p input#nome, input#sobrenome {
-    float: right;
-}
-p input#enviar {
+/* formulário */
+input {
     padding: 5px;
     border-radius: 5px;
-    text-align: center;
     border-radius: 5px;
 }
-/* segundo furmulário */
-section#segundo-formulario {
-    background-color: blue;
+section#formulario select {
+    padding: 5px;
     border-radius: 5px;
-    margin: 10px auto;
-    width: 300px;
-    height: 120px;
+    border-radius: 5px;
+}
+section#formulario {
+    border-radius: 5px;
     margin: auto;
+    width: 320px;
+    height: auto;
 }
-section#segundo-formulario p {
+section#formulario p {
     margin: auto;
     float: right;
     padding: 5px;
     color: white;
 }
-p input#limpar {
-    padding: 5px;
-    border-radius: 5px;
-    text-align: center;
-    border-radius: 5px;
-}
-/* terceito formulário */
-section#terceiro-formulario {
-    background-color: blue;
-    border-radius: 5px;
-    margin: 10px auto;
-    width: 300px;
-    height: 250px;
-}
-section#terceiro-formulario p {
-    margin: auto;
-    float: right;
-    padding: 5px;
+fieldset, legend {
+    background-color: #74BDF7;
     color: white;
+    padding: 0 5px 0 5px;
+    border-radius: 5px;
+    margin: 5px;
 }
-p input {
-    padding: 5px;
-    border-radius: 5px;
-    text-align: center;
-    border-radius: 5px;
+label.bloco {
+    display: block;
+    padding: 2px;
 }
