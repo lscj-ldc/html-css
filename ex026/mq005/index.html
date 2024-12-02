@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Diocese</a></li>
+                <li><a href="#">Parôquias</a></li>
+                <li><a href="#">Atos do Governo</a></li>
+                <li><a href="#">Agenda</a></li>
+                <li><a href="#">Feed Diocesano</a></li>
+                <li><a href="#">Ouvidoria</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <h1>Paroquia</h1>
+
+            <p>
+                Local e Contato <br>
+                Endereço: Avenida Major Nicácio,, 1779, Cidade Nova, 14401-135 <br>
+                Cidade/UF: Franca-SP <br>
+                Ponto de Referência: <br>
+                Telefone para Contato: (16) 3724-2623 <br>
+                E-mail: nsgracasfranca@com4.com.br
+            </p>
+            <p>
+                Redes Sociais <br>
+                YouTube <br>
+                Facebook <br>
+                Dados <br>
+                Pároco :Frei Edmilson Vidal, OAR <br>
+                Vigário paroquial : Frei Ademir João Garcia, OAR <br>
+                Vigário : Frei Antonio Benedito Stefani, OAR <br>
+                Cooperador : <br>
+                Data Criação : 21/01/1960 <br>
+                Expediente da secretaria:
+            </p>
+            <p>
+                Segunda a sexta-feira: 8h - 17h30
+                Sábado: 8h30 -11h00
+            </p>
+            <p>
+                Missas:
+            </p>
+            <p>
+                Segunda, terça, quarta e sexta: 06h30; 11h30 e 19 h <br>
+                Sábado: 06h30 e 19 h <br>
+                Domingo: 06h30; 08h30; 11h e 19 h
+            </p>
+            <p>
+                Celebração da Palavra com Comunhão <br>
+                Quinta- feira: 06h30, 11h30 e 19 h
+            </p>
+        </article>
+    </main>
+    <footer>
+        <p>Site desenvolvido por Luís da Silveira Carneiro Júnior</p>
+    </footer>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+
+</html>
