@@ -11,18 +11,28 @@ html {
 header {
     background-color: rgb(158, 158, 158);
 }
+h6 {
+    background-color: blue;
+    color: blue;
+    height: 25px;
+    margin: 10px;
+}
 header > h1 {
     text-align: center;
+    color: white;
+    padding: 10px;
 }
 menu ul {
     list-style-type: none;
     background-color: gray;
+    padding: 10px;
 }
 menu li {
     background-color: rgb(75, 75, 75);
     color: white;
     display: inline-block;
     padding: 10px;
+    border-radius: 5px;
 }
 article {
     width: 600px;
@@ -30,7 +40,7 @@ article {
     margin: auto;
     text-align: justify;
 }
-article h2 {
+article h1, h2 {
     text-align: center;
     padding: 10px;
 }

@@ -20,7 +20,7 @@ article h2 {
     text-align: center;
     padding: 10px;
 }
-/* aticle::after faz com que vá para o final do artigo */
+/* article::after faz com que vá para o final do artigo */
 article::after { 
     content: 'Esse artigo foi impresso através do site www.cursoemvideo.com';
 }
