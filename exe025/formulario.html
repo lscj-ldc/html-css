@@ -249,6 +249,94 @@
         </form>
     </section>
     <h6>0</h6>
+    <h1>Oitavo Formulário Aula Onze</h1>
+    <section id="formulario">
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <fieldset>
+                <legend>
+                    Dados Pessoais
+                </legend>
+                <p>
+                    <label for="in1">Número 1: </label>
+                    <input type="number" name="n1" id="in1" min="0" max="50" required
+                        oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+                </p>
+                <p>
+                    <label for="in2">Número 2: </label>
+                    <input type="number" name="n2" id="in2" min="0" max="50" required
+                        oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+                </p>
+                <p>
+                    <label for="isoma">Soma: </label>
+                    <output name="soma"
+                        id="isoma">0</output><!-- output não envia valor, sua utilidade é somente para apresentar dados na tela -->
+                </p>
+                <label for="enviar">
+                    <input type="submit" value="Enviar" id="enviar">
+                </label>
+                <label for="limpar">
+                    <input type="reset" value="Limpar" name="limpar" id="limpar">
+                </label>
+            </fieldset>
+        </form>
+    </section>
+    <h6>0</h6>
+    <h1>Nono Formulário Aula Onze</h1>
+    <section id="formulario">
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <fieldset>
+                <legend>
+                    Dados Pessoais
+                </legend>
+                <p>
+                    <label for="inum">Número: </label>
+                    <input type="range" name="num" id="inum" min="0" max="10" value="5"
+                        oninput="ival.innerHTML = Number(inum.value)">
+                    <output id="ival">5</output>
+                </p>
+                <label for="enviar">
+                    <input type="submit" value="Enviar" id="enviar">
+                </label>
+                <label for="limpar">
+                    <input type="reset" value="Limpar" name="limpar" id="limpar">
+                </label>
+            </fieldset>
+        </form>
+    </section>
+    <h6>0</h6>
+    <h1>Décimo Formulário Aula Onze</h1>
+    <section id="formulario">
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <fieldset>
+                <legend>
+                    Dados Pessoais
+                </legend>
+                <p>
+                    <label for="iano">Em que ano você nasceu?: </label>
+                    <input type="number" name="ano" id="iano" min="1900" max="2024" oninput="calcIdade()">
+                </p>
+                <p>
+                    <label for="iidade">Sua idade é: </label>
+                    <output id="iidade">0</output>
+                </p>
+                <p>
+                    <label for="enviar">
+                        <input type="submit" value="Enviar" id="enviar">
+                    </label>
+                    <label for="limpar">
+                        <input type="reset" value="Limpar" name="limpar" id="limpar">
+                    </label>
+                </p>
+            </fieldset>
+        </form>
+    </section>
+    <h6>0</h6>
+    <script>
+        function calcIdade() {
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
 </body>
 
 </html>
