@@ -3,3 +3,8 @@
     margin: 0;
     padding: 0;
 }
+/* Aparelho deitado (landscape) */
+body {
+    background-image: url(../imagens/cev-landscape.jpg);
+    background-position: left bottom;/* Faz com que a imagem fique colada do lado esquerdo em baixo */
+}
