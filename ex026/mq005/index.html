@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="estilos/media-query.css">
 </head>
 
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
         <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
@@ -74,8 +74,15 @@
         <p>Site desenvolvido por Luís da Silveira Carneiro Júnior</p>
     </footer>
     <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 788) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display ='none'
+            }
+        }
         function clickMenu() {
-            if (itens.style.display == 'block') {
+            if (itens.style.display === 'block') {
                 itens.style.display = 'none'
             } else {
                 itens.style.display = 'block'

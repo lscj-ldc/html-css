@@ -11,23 +11,9 @@ header {
     background-color: #7D48DB;
 }
 header > h1 {
-    text-align: center;
-    background-color: #8a2be2;
-    color: white;
     padding: 10px;
-}
-i#burguer {
-    display: block;
-    background-color: #8a2be2;
-    border: 1px solid white;
-    color: white;
     text-align: center;
-    padding: 10px;
-    cursor: pointer;
-}
-i#burguer:hover {
-    background-color: white;
-    color: black;
+    color: white;
 }
 menu {
     display: none;
@@ -37,29 +23,42 @@ menu > ul {
 }
 menu > ul > li > a {
     display: block;
-    background-color: #C491DB;
-    border: 2px solid white;
-    color: white;
-    text-align: center;
-    text-decoration: none;
     padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #F4DEFA;
+    color: black;
+    border-top: 2px solid #F994A8;
+}
+i#burguer {
+    background-color: #F994A8;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+i#burguer:hover {
+    background-color: white;
+    color: black;
 }
 menu > ul > li > a:hover {
-    background-color: #8a2be2;
+    background-color: #F994A8;
 }
 main {
     width: 90vw;
-    background-color: #DFB7CA;
+    background-color: #F4DEFA;
     margin: 10px auto;
     padding: 10px;
     border-radius: 10px;
 }
 article > h2 {
-    padding: 0 0 20px 0;
+    padding: 20px;
 }
 article > p {
     text-align: justify;
     margin: 0 0 20px 0;
+    /* text-indent: 10px; projeto do professor existe este parâmetro */
 }
 footer > p {
     text-align: center;
