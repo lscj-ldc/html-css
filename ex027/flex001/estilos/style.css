@@ -1,0 +1,58 @@
+@charset "UTF-8";
+/* primeira aula de flexible box */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+section img {
+    display: flex;
+    margin: 5px auto;
+}
+section h1, h2, p {
+    text-align: center;
+    background-color: aqua;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+div.conteiner {
+    background-color: lightsalmon;
+    display: flex;
+    margin: 10px;
+}
+div.item {
+    background-color: lightskyblue;
+    border: 1px solid white;
+    text-align: center;
+    padding: 5px;
+    flex: auto;/* faz com que os filhos do container ocupe todo o espaço do pai */
+}
+/* segunda aula de flexible box */
+div.conteiner-dois {
+    background-color: lightsalmon;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+div.conteiner-dois > .item2 {
+    background-color: lightskyblue;
+    border: 1px solid white;
+    text-align: center;
+    padding: 5px;
+}
+/* terceira aula de flexible box */
+div.conteiner-tres {
+    background-color: lightsalmon;
+    display: flex;
+    flex-flow: row nowrap;
+    /*flex-direction: row;
+    flex-wrap: wrap; no lugar das linhas 49 e 50 usar flex-flow */
+}
+div.conteiner-tres > .item3 {
+    background-color: lightskyblue;
+    border: 1px solid white;
+    text-align: center;
+    padding: 5px;
+    flex: auto;/* flex: auto só funciona no filho, no pai não */
+}
