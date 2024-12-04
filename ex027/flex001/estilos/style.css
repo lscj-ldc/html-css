@@ -144,6 +144,7 @@ div.conteiner-oito > .item8 {
     border: 1px solid white;
     text-align: center;
     padding: 20px;
+    margin: 0 10px;
 }
 div#i1 {
     order: 0;
@@ -172,4 +173,28 @@ div#i6 {
 div#i7 {
     order: 2;
     align-self: stretch;
+}
+/* nona aula de flexible box */
+div.conteiner-nove {
+    background-color: lightsalmon;
+    display: flex;
+    flex-flow: row nowrap;
+}
+div.conteiner-nove > .item9 {
+    background-color: lightskyblue;
+    border: 1px solid white;
+    text-align: center;
+    flex-basis: auto;
+}
+/* décima aula de flexible box */
+div.conteiner-dez {
+    background-color: lightsalmon;
+    display: flex;
+    flex-flow: row nowrap;
+}
+div.conteiner-dez > .item10 {
+    background-color: lightskyblue;
+    border: 1px solid white;
+    text-align: center;
+    flex-basis: auto;
 }
