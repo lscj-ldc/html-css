@@ -84,3 +84,17 @@ section.conteiner-cinco {
     height: 200px;
     width: 200px;
 }
+/* sexta aula de flexible box */
+div.conteiner-seis {
+    background-color: lightsalmon;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    height: 400px;
+}
+div.conteiner-seis > .item6 {
+    background-color: lightskyblue;
+    border: 1px solid white;
+    text-align: center;
+    padding: 40px;
+}
