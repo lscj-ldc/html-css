@@ -1,33 +1,42 @@
 @charset "UTF-8";
+
 /* primeira aula de flexible box */
 * {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
+
 section img {
     display: flex;
     margin: 5px auto;
 }
-section h1, h2, p {
+
+section h1,
+h2,
+p {
     text-align: center;
     background-color: aqua;
     border-radius: 5px;
     padding: 10px;
     margin: 10px;
 }
+
 div.conteiner {
     background-color: lightsalmon;
     display: flex;
     margin: 10px;
 }
+
 div.item {
     background-color: lightskyblue;
     border: 1px solid white;
     text-align: center;
     padding: 5px;
-    flex: auto;/* faz com que os filhos do container ocupe todo o espaço do pai */
+    flex: auto;
+    /* faz com que os filhos do container ocupe todo o espaço do pai */
 }
+
 /* segunda aula de flexible box */
 div.conteiner-dois {
     background-color: lightsalmon;
@@ -35,12 +44,14 @@ div.conteiner-dois {
     flex-direction: row;
     margin: 10px;
 }
-div.conteiner-dois > .item2 {
+
+div.conteiner-dois>.item2 {
     background-color: lightskyblue;
     border: 1px solid white;
     text-align: center;
     padding: 5px;
 }
+
 /* terceira aula de flexible box */
 div.conteiner-tres {
     background-color: lightsalmon;
@@ -50,25 +61,31 @@ div.conteiner-tres {
     align-items: center;
     /*flex-wrap: wrap; no lugar das linhas 49 e 50 usar flex-flow */
 }
-div.conteiner-tres > .item3 {
+
+div.conteiner-tres>.item3 {
     background-color: lightskyblue;
     border: 1px solid white;
     text-align: center;
     padding: 5px;
-    flex: auto;/* flex: auto só funciona no filho, no pai não */
+    flex: auto;
+    /* flex: auto só funciona no filho, no pai não */
 }
+
 /* quarta aula de flexible box */
 div.conteiner-quatro {
     background-color: lightsalmon;
     display: flex;
-    justify-content: space-between;/* deve ficar no pai */
+    justify-content: space-between;
+    /* deve ficar no pai */
 }
-div.conteiner-quatro > .item4 {
+
+div.conteiner-quatro>.item4 {
     background-color: lightskyblue;
     border: 1px solid white;
     text-align: center;
     padding: 5px;
 }
+
 /* quinta aula de flexible box */
 section.conteiner-mae {
     background-color: lightgreen;
@@ -79,11 +96,13 @@ section.conteiner-mae {
     justify-content: center;
     align-items: center;
 }
+
 section.conteiner-cinco {
     background-color: lightseagreen;
     height: 200px;
     width: 200px;
 }
+
 /* sexta aula de flexible box */
 div.conteiner-seis {
     background-color: lightsalmon;
@@ -92,45 +111,56 @@ div.conteiner-seis {
     align-content: flex-start;
     height: 400px;
 }
-div.conteiner-seis > .item6 {
+
+div.conteiner-seis>.item6 {
     background-color: lightskyblue;
     border: 1px solid white;
     text-align: center;
     padding: 40px;
 }
+
 /* sétima aula de flexible box */
 div.conteiner-sete {
     background-color: lightsalmon;
     display: flex;
     flex-flow: row wrap;
 }
-div.conteiner-sete > .item7 {
+
+div.conteiner-sete>.item7 {
     background-color: lightskyblue;
     border: 1px solid white;
     text-align: center;
     padding: 20px;
 }
+
 div#i1 {
     order: 0;
 }
+
 div#i2 {
     order: -2;
 }
+
 div#i3 {
     order: 4;
 }
+
 div#i4 {
     order: 8;
 }
+
 div#i5 {
     order: 2;
 }
+
 div#i6 {
     order: 0;
 }
+
 div#i7 {
     order: 2;
 }
+
 /* sétima aula de flexible box */
 div.conteiner-oito {
     background-color: lightsalmon;
@@ -139,62 +169,140 @@ div.conteiner-oito {
     align-items: flex-start;
     height: 400px;
 }
-div.conteiner-oito > .item8 {
+
+div.conteiner-oito>.item8 {
     background-color: lightskyblue;
     border: 1px solid white;
     text-align: center;
     padding: 20px;
     margin: 0 10px;
 }
+
 div#i1 {
     order: 0;
     align-self: start;
 }
+
 div#i2 {
     order: -2;
     align-self: auto;
 }
+
 div#i3 {
     order: 4;
     align-self: flex-end;
 }
+
 div#i4 {
     order: 8;
     align-self: auto;
 }
+
 div#i5 {
     order: 2;
     align-self: center;
 }
+
 div#i6 {
     order: 0;
     align-self: end;
 }
+
 div#i7 {
     order: 2;
     align-self: stretch;
 }
+
 /* nona aula de flexible box */
 div.conteiner-nove {
     background-color: lightsalmon;
     display: flex;
     flex-flow: row nowrap;
 }
-div.conteiner-nove > .item9 {
+
+div.conteiner-nove>.item9 {
     background-color: lightskyblue;
     border: 1px solid white;
     text-align: center;
     flex-basis: auto;
 }
+
 /* décima aula de flexible box */
 div.conteiner-dez {
     background-color: lightsalmon;
     display: flex;
     flex-flow: row nowrap;
 }
-div.conteiner-dez > .item10 {
+
+div.conteiner-dez>.item10 {
     background-color: lightskyblue;
     border: 1px solid white;
     text-align: center;
-    flex-basis: auto;
+    flex-basis: 250px;
+    flex-shrink: 1;
+    /* por padrão deve manter como 1, se quiser que o elemento não diminua, manter 0*/
+    flex-grow: 0;
+    /* por padrão deve manter como 0, se quiser que o elemento aumente junto com o conteiner utilizar 1*/
+}
+
+/* décima aula de flexible box */
+div.conteiner-onze {
+    background-color: lightsalmon;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+div.conteiner-onze>.item11 {
+    background-color: lightskyblue;
+    border: 1px solid white;
+    text-align: center;
+    flex-basis: 200px;
+}
+
+div#cxA {
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+div#cxB {
+    flex-shrink: 1;
+    flex-grow: 2;
+}
+
+div#cxC {
+    flex-shrink: 1;
+    flex-grow: 4;
+}
+
+/* décima aula de flexible box */
+div.conteiner-doze {
+    background-color: lightsalmon;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+div.conteiner-doze>.item12 {
+    background-color: lightskyblue;
+    border: 1px solid white;
+    text-align: center;
+}
+div#cx1A {
+    /*flex-shrink: 0;
+    flex-grow: 1;
+    flex-basis: 200px;*/
+    flex: 0 1 200px;
+}
+
+div#cx1B {
+    /*flex-shrink: 0;
+    flex-grow: 1;
+    flex-basis: 200px;*/
+    flex: 1 8 150px;
+}
+
+div#cx1C {
+    /*flex-shrink: 0;
+    flex-grow: 1;
+    flex-basis: 200px;*/
+    flex: 1 1 auto;/* se colocar flex: 0 1 auto, nada muda, é o mesmo que colocar flex: initial, e flex: auto, é simplismente dizer para utilizar o maior número de flexibilidade que existir */
 }
