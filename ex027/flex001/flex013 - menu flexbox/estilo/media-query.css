@@ -1,0 +1,23 @@
+@charset "UTF-8";
+@media screen and (max-width: 580px) {
+    header, header>nav {
+        flex-flow: column nowrap;/* esta configuração quando a tela for do tamanho de 580px ou menor, os itens ficará um abaixo do outro */
+    }
+    header>h1 {
+        flex-basis: auto;/* esta configuração faz com que o tamanho da caixa do item fiquem do tamanho do elemento */
+        margin: 5px;
+    }
+    header>nav>a {
+        width: 90vw;/* esta configuração faz com que o item ocupe 90vw da tela */
+    }
+}
+@media screen and (max-width: 980px) {
+    header>h1 {
+        margin: auto;
+    }
+}
+@media screen and (max-width: 438px) {
+    header>h1 {
+        font-size: 1.5em;
+    }
+}

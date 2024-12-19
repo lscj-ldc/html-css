@@ -26,15 +26,19 @@ header {
 }
 
 header>h1 {
-    border: 1px dotted black;
-    flex: 0 0 450px;/* com esta configuração ele não vai crescer, não vai encolher, mas vai manter sua configuração em 200px */
+    /*border: 1px dotted black;*/
+    flex: 0 0 450px;
+    /* com esta configuração ele não vai crescer, não vai encolher, mas vai manter sua configuração em 200px */
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.336);
 }
 
 header>nav {
-    border: 1px dotted black;
+    /*border: 1px dotted black;*/
     display: flex;
-    flex-flow: row wrap;/* de colocarmos flex-flow: column nowrap; os dados ficaram um encima do outro, se colocarmos flex-flow: row wrap; os itens irão quebrar gradativamente */
-    justify-content: flex-end;/* com a configuração justify-content: flex-end; faz com que os dados fiquem a direita */
+    flex-flow: row wrap;
+    /* de colocarmos flex-flow: column nowrap; os dados ficaram um encima do outro, se colocarmos flex-flow: row wrap; os itens irão quebrar gradativamente */
+    justify-content: flex-end;
+    /* com a configuração justify-content: flex-end; faz com que os dados fiquem a direita */
 }
 
 header>nav>a {
